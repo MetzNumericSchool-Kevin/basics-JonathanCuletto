@@ -68,7 +68,7 @@ else{
 
 //Liste des potions
 
-const potions = ["Potion de soin", "Potion anti-poison", "Potion de Mana"];
+const potions = [" Grande Potion de soin", "Potion anti-poison", "Potion de Mana"];
 console.log(potions);
 
 //Affichage des potions
@@ -84,6 +84,43 @@ for (let i=0;i<potions.length;i++){
 
 potions.push("Potion d'agilite");
 console.log(potions);
+
+//Finaly, nope.
+
+potions.pop();
+console.log("Liste des potions après suppression :", potions);
+
+//Rangeons les informations de la potion de soin dans un objet
+
+let PotionDeSoin = {
+    nom: "Potion de soin",
+    prix: 50,
+    stock: 100};
+console.log(PotionDeSoin);
+
+//Affichons les informations de la potion
+
+console.log(PotionDeSoin.nom);
+console.log(PotionDeSoin["prix"]);
+
+//C'est l'heure de faire l'inventaire...
+
+const inventaire = [
+    { nom: "Grande Potion de soin", prix: "25", stock: "30" },
+    { nom: "Potion anti-poison", prix: "15", stock:"12"},
+    { nom: "Potion de Mana", prix:"20", stock:"24"}];
+
+console.log(inventaire);
+
+//Aventurier, regarde tout ce que je vends !
+
+console.log("Inventaire du marchand :");
+for (let i = 0; i < inventaire.length; i++) {
+    console.log(`Nom: ${inventaire[i].nom}`);
+    console.log(`Prix: ${inventaire[i].prix}`);
+    console.log(`Stock: ${inventaire[i].stock}`);
+}
+
 
 
 
