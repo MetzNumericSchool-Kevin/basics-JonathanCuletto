@@ -68,12 +68,19 @@ else{
 
 //Liste des potions
 
-const potions = ["Potion de soin", "Antidote", "Potion de Mana"];
+const potions = ["Potion de soin", "Potion anti-poison", "Potion de Mana"];
 console.log(potions);
 
 //Affichage des potions
 
 console.log(potions[0]);
 console.log(potions[potions.length - 1]);
+for (let i=0;i<potions.length;i++){
+    const nompotion=potions[i];
+    console.log(`Nous avons de la ${potions} !`)
+}
+
+//Ajout d'une nouvelle potion
+
 
 
