@@ -82,5 +82,8 @@ for (let i=0;i<potions.length;i++){
 
 //Ajout d'une nouvelle potion
 
+potions.push("Potion d'agilite");
+console.log(potions);
+
 
 
